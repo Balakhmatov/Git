@@ -1,0 +1,8 @@
+1. ID: 124
+2. Severity: Major
+3. Title: Menu button doesn't work on main Page
+4. STR: 1)Open www.site.com" 2)Tap on Menu button
+5. Expected result: The menu panel drops out
+6. Actual result: Menu panel doesn't drop out
+7. Author: Ilia Balakhmatov
+8. Environment: Win 11, Chrome 115
