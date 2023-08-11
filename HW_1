@@ -69,9 +69,7 @@ Press "Commit Changes", Press "Commit Changes"
 Open terminal GitBash
 git pull
 
-
-XML
- 18. Create the remote repository "JSON".
+ 18. Create the remote repository "XML".
 Create remote repository on Github.com and copy its URL
 2. Clone the remote repository "XML" to the local computer.
 git clone https://github.com/Balakhmatov/XML.git
