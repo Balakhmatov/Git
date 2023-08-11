@@ -1,0 +1,67 @@
+1. Create branches on a local repository:
+- Postman
+- Jmeter
+- CheckLists
+- Bug_Reports
+- SQL
+- Charles
+- Mobile testing
+
+git branch Postman
+git branch Jmeter
+git branch CheckLists
+git branch Bug_Reports
+git branch SQL
+git branch Charles
+git branch Mobile_Testing
+
+2. Push branches to the remote repository
+git push -u origin Postman Jmeter CheckLists Bug_Reports SQL Charles Mobile_Testing
+3. В ветке Bug_Reports сделать текстовый документ со структурой баг репорта  Create file with txt format in a branch Bug_Reports
+git checkout bag reports
+cat > bug_report.txt    Press Enter, then enter data:
+1. ID: 124
+2. Severity: Major
+3. Title: Menu button doesn't work on main Page
+4. STR: 1)Open www.site.com" 2)Tap on Menu button
+5. Expected result: The menu panel drops out
+6. Actual result: Menu panel doesn't drop out
+7. Author: Ilia Balakhmatov
+8. Environment: Win 11, Chrome 115
+
+4. Push the file to remote repository
+git add bug_report.txt
+git commit -m "new"
+git push
+5. Merge a branch Bug_Reports to the branch Main
+git checkout main
+git merge Bag Reports
+6. Push baranch main на внешний репозиторий
+git push -u origin main
+7. Create a file with check-list structure in the branch CheckLists
+git checkout CheckLists
+vim checkLists.txt press Enter, then Enter data:
+
+1. Buttons "Place an order","Buy" exist
+2. It is possible to add trades to the cart
+3. Letter comes to email after placing an order
+4. Filters for searching the trade exist
+5. Feedback form exists
+6. Section Contacts exists
+7. SM links exist
+8. The serch bar is on a visible place
+9. The breadcrumbs exist
+10. Misspells don't exist
+11. Check the opportunities of the personal account
+12. It is easy to find a nesessary trade
+13. There is no duplicates
+
+
+8. Push the file to remote repository
+git push -u origin CheckLists
+9. Merge a branch CheckLists to the branch Main on the remote repository  
+Enter into repository CheckLists on Github interface, change Compare & Pull request, change Create Pull Request, change Merge pull request, change Confirm merge
+10. Sync remote branch Main and local branch Main
+Go to the terminal and enter:
+git checkout main
+git pull
