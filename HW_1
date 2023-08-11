@@ -1,0 +1,137 @@
+ 1. Create the remote repository "JSON".
+Create remote repository on Github.com and copy its URL
+
+Then work on the terminal GitBash:
+
+ 2. Clone the remote repository "JSON" to the local computer.
+git clone https://github.com/Balakhmatov/JSON.git
+ 3. Create a file new.json on local repository "JSON".
+touch new.json
+ 4. Add the file to the git
+git add new.json
+ 5. Commit the file
+git commit -m "create new file"
+ 6. Push the file to the remote repository
+git push
+ 7. Edit the file “new.json” - type info about yourself in JSON format (First and Last Name, Age, Number of pets, Desired salary)
+vim new.json
+press "i" to start editing
+{
+"First Name": "Ilia",
+"Last Name": "Balakhmatov",
+"Age": 32,
+"Pets": 0,
+"Desired salary": 10000
+}
+Press one by one: Esc,:,w,q,Enter
+ 8. Send changes to the remote repository
+1) git commit -a -m "changes in new.json" 2) git push
+ 9. Create a file preferences.json
+touch preferences.json
+ 10. Edit the file “preferences.json” - enter the information about yourself in JSON format (Favorite Movie, Series, Dih, Season, Country i want to visit)
+vim new.json 
+{
+"Favorite Movie": "The Professional",
+"Favorite Series": "Friends",
+"Favorite Dish": "Steak",
+"Favorite Season": "Summer",
+"Country i want to visit": "USA"
+}
+ 11. Create a file sklls.json and add there info about skills will be learned on the courses in JSON format
+cat > sklls.json
+{
+"postman": "auto testing",
+"sql": "working with data bases",
+"terminal": "learn base commands",
+"git": "working with virsions",
+"client server": "working with devtools"
+}
+ 12. Push 2 files to the remote repository
+1) git add .  2) git commit -m "new"  3) git push 
+ 13. Create a file bug_report.json. on the remote repository
+Change "Add File" in repository, give it a name "bug_report.json"
+ 14. Commit the changes on a web interface
+Press "Commit Changes", Press "Commit Changes"
+ 15. Edit the file bug_report.json adding a bug report struction to the file
+{
+"ID": 124,
+"Severity": "Major",
+"Title": "Menu button doesn't work on main Page",
+"STR": [ "1)Open www.site.com", "2)Tap on Menu button"],
+"Expected result": "The menu panel drops out",
+"Actual result": "Menu panel doesn't drop out",
+"Author": "Ilia Balakhmatov",
+"Environment": ["Win 11", "Chrome 115"]
+}
+ 16. Commit the changes on the web interface.
+Press "Commit Changes", Press "Commit Changes"
+ 17. Sync the remote and the local reposytories
+Open terminal GitBash
+git pull
+
+
+XML
+ 18. Create the remote repository "JSON".
+Create remote repository on Github.com and copy its URL
+2. Clone the remote repository "XML" to the local computer.
+git clone https://github.com/Balakhmatov/XML.git
+ 3. Create a file new.xml on local repository "XML".
+touch new.xml
+ 21. Add the file to the git
+git add new.xml
+ 22. Commit the file
+git commit -m "create new file"
+ 23. Push the file to the remote repository
+git push
+ 24. Edit the file “new.xml” - enter the information about yourself in XML format (First and Last Name, Age, Number of pets, Desired salary)
+<About Me>
+<First Name>Ilia</First Name>
+<Last Name>Balakhmatov</Last Name>
+<Age>32</Age>
+<Pets>0</Pets>
+<Desired Salary>10000</Desired Salary>
+</About Me>
+ 25. Push changes to the remote repository
+1) git commit -a -m "changes in new.xml" 2) git push
+ 26. Create a file preferences.xml
+touch preferences.xml
+ 27. Edit the file “preferences.xml” - enter the information about your preferences in XML format (Favorite Movie, Series, Dih, Season, Country i want to visit)
+<Favorites>
+<Favorite Movie>The Professional</Favorite Movie>
+<Favorite Series>Friends</Favorite Series>
+<Favorite Dish>Steak</Favorite Series>
+<Favorite Season>Summer</Favorite Season>
+<Country i want to visit>USA</Country i want to visit>
+</Favorites>
+ 28. Create a file sklls.xml and add there info about skills will be learned on the courses in XML format
+touch sklls.xml
+<Skills>
+<postman>auto testing</postman>
+<sql>working with data bases</sql>
+<terminal>learn base commands</terminal>
+<git>working with virsions</git>
+<client server>working with devtools</client server>
+</Skills>
+ 29. Add and commit files in one line
+git add . && git commit -m "new"
+ 30. Push 2 files to the remote repository together
+git push
+ 31. Create a file bug_report.xml on the GitHub web interface 
+Change "Add File" in repository, give it a name "bug_report.xml"
+ 32. Commit the changes on the web interface
+Press "Commit Changes", Press "Commit Changes"
+ 33. Edit bug_report.xml to adding bug report structure into the file in XML format
+<Bug report>
+<ID>124</ID>
+<Severity>Major</Severity>
+<Title>Menu button doesn't work on main Page</Title>
+<STR>1)Open www.site.com, 2)Tap on Menu button</STR>
+<Expected result>The menu panel drops out</Expected result>
+<Actual result>Menu panel doesn't drop out</Actual result>
+<Author>Ilia Balakhmatov</Author>
+<Environment>Win 11, Chrome 115</Environment>
+</Bug report>
+ 34. Commit the changes on the GitHub web interface
+Press "Commit Changes", Press "Commit Changes"
+ 35. Sync the remote and the local reposytories
+git pull
